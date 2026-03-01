@@ -4,8 +4,8 @@
 
 Entry for the [Arduino Sensor Fusion Challenge](https://www.hackster.io/contests/sensor-fusion-challenge)
 
-Project entry [GRIP: Proprioceptive Terrain Sensing for Wheeled Robots](https://www.hackster.io/danvelarde00/grip-proprioceptive-terrain-sensing-for-wheeled-robots-362d90)
 ---
+Project entry [GRIP: Proprioceptive Terrain Sensing for Wheeled Robots](https://www.hackster.io/danvelarde00/grip-proprioceptive-terrain-sensing-for-wheeled-robots-362d90)
 
 ## Motivation
 
@@ -565,5 +565,6 @@ License terms to be determined upon competition completion.
 *GRIP demonstrates that multi-modal sensor fusion enables surface classification
 capabilities impossible with single sensors, providing robots with continuous
 terrain awareness for adaptive autonomous operation.*
+
 
 
