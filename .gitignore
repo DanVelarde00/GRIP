@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+# Large data files — not tracked in git
+*.eim
+*.csv
+*.csv.bak
+python/old_data/
+data/old_data/

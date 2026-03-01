@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="750"
+     viewBox="0 0 1060 750" font-family="'Courier New', monospace">
+
+  <!-- Background -->
+  <rect width="1060" height="750" fill="#0d1117"/>
+
+  <!-- Title -->
+  <text x="530" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#c9d1d9">GRIP — Ground Recognition Intelligence Platform</text>
+  <text x="530" y="47" text-anchor="middle" font-size="11" fill="#6e7681">Hardware Schematic · Arduino Uno Q · LCD: 5V · All other signals: 3.3V</text>
+  <line x1="50" y1="58" x2="1010" y2="58" stroke="#21262d" stroke-width="1"/>
+
+  <!-- ═══════════ POWER RAIL (3.3V) ═══════════ -->
+  <line x1="55" y1="78" x2="1005" y2="78" stroke="#f85149" stroke-width="3"/>
+  <text x="15" y="83" font-size="10" font-weight="bold" fill="#f85149">3V3</text>
+  <line x1="55" y1="75" x2="55" y2="81" stroke="#f85149" stroke-width="2"/>
+  <line x1="1005" y1="75" x2="1005" y2="81" stroke="#f85149" stroke-width="2"/>
+
+  <!-- ═══════════ POWER RAIL (5V) ═══════════ -->
+  <line x1="55" y1="98" x2="1005" y2="98" stroke="#f0883e" stroke-width="3"/>
+  <text x="18" y="103" font-size="10" font-weight="bold" fill="#f0883e">5V</text>
+  <line x1="55" y1="95" x2="55" y2="101" stroke="#f0883e" stroke-width="2"/>
+  <line x1="1005" y1="95" x2="1005" y2="101" stroke="#f0883e" stroke-width="2"/>
+
+  <!-- ═══════════ GND RAIL ═══════════ -->
+  <line x1="55" y1="665" x2="1005" y2="665" stroke="#484f58" stroke-width="3"/>
+  <text x="13" y="670" font-size="10" font-weight="bold" fill="#484f58">GND</text>
+  <line x1="55" y1="662" x2="55" y2="668" stroke="#484f58" stroke-width="2"/>
+  <line x1="1005" y1="662" x2="1005" y2="668" stroke="#484f58" stroke-width="2"/>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ARDUINO UNO Q  (x:400-640, y:190-555)                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="400" y="190" width="240" height="365" rx="10" fill="#0d1f3a" stroke="#388bfd" stroke-width="2.5"/>
+  <rect x="400" y="190" width="240" height="42" rx="10" fill="#1c3460"/>
+  <text x="520" y="211" text-anchor="middle" font-size="13" font-weight="bold" fill="#58a6ff">ARDUINO UNO Q</text>
+  <text x="520" y="226" text-anchor="middle" font-size="9" fill="#8b949e">STM32U585 MCU + Qualcomm Linux MPU</text>
+
+  <!-- Left pin stubs -->
+  <line x1="375" y1="245" x2="400" y2="245" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="375" cy="245" r="4" fill="#f0883e"/>
+  <text x="402" y="242" font-size="10" fill="#f0883e">5V</text>
+
+  <line x1="375" y1="268" x2="400" y2="268" stroke="#f85149" stroke-width="2"/>
+  <circle cx="375" cy="268" r="4" fill="#f85149"/>
+  <text x="402" y="265" font-size="10" fill="#f85149">3.3V</text>
+
+  <line x1="375" y1="300" x2="400" y2="300" stroke="#484f58" stroke-width="2"/>
+  <circle cx="375" cy="300" r="4" fill="#484f58"/>
+  <text x="402" y="297" font-size="10" fill="#8b949e">GND</text>
+
+  <line x1="375" y1="375" x2="400" y2="375" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="375" cy="375" r="4" fill="#3fb950"/>
+  <text x="402" y="372" font-size="10" fill="#8b949e">A2</text>
+
+  <line x1="375" y1="445" x2="400" y2="445" stroke="#e3b341" stroke-width="2"/>
+  <circle cx="375" cy="445" r="4" fill="#e3b341"/>
+  <text x="402" y="442" font-size="10" fill="#8b949e">D2</text>
+
+  <!-- Right pin stubs -->
+  <line x1="640" y1="268" x2="665" y2="268" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="665" cy="268" r="4" fill="#58a6ff"/>
+  <text x="619" y="265" font-size="10" fill="#8b949e">D20/SDA</text>
+
+  <line x1="640" y1="300" x2="665" y2="300" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="665" cy="300" r="4" fill="#bc8cff"/>
+  <text x="619" y="297" font-size="10" fill="#8b949e">D21/SCL</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- MAX4466 ANALOG MIC  (x:60-225, y:150-265)                -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="60" y="150" width="165" height="115" rx="8" fill="#0f1f10" stroke="#3fb950" stroke-width="2"/>
+  <rect x="60" y="150" width="165" height="30" rx="8" fill="#1a331a"/>
+  <text x="142" y="170" text-anchor="middle" font-size="12" font-weight="bold" fill="#3fb950">MAX4466</text>
+  <text x="142" y="183" text-anchor="middle" font-size="9" fill="#8b949e">Analog Microphone · A2</text>
+
+  <!-- Right pin stubs -->
+  <line x1="225" y1="190" x2="245" y2="190" stroke="#f85149" stroke-width="2"/>
+  <circle cx="245" cy="190" r="3" fill="#f85149"/>
+  <text x="162" y="194" font-size="9" fill="#f85149">VCC</text>
+
+  <line x1="225" y1="218" x2="245" y2="218" stroke="#484f58" stroke-width="2"/>
+  <circle cx="245" cy="218" r="3" fill="#484f58"/>
+  <text x="162" y="222" font-size="9" fill="#8b949e">GND</text>
+
+  <line x1="225" y1="246" x2="245" y2="246" stroke="#3fb950" stroke-width="2"/>
+  <circle cx="245" cy="246" r="3" fill="#3fb950"/>
+  <text x="162" y="250" font-size="9" fill="#3fb950">OUT</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- LSM303DLHC IMU  (x:750-965, y:140-295)                   -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="750" y="140" width="215" height="155" rx="8" fill="#0f1a2a" stroke="#58a6ff" stroke-width="2"/>
+  <rect x="750" y="140" width="215" height="30" rx="8" fill="#1a2c4a"/>
+  <text x="857" y="160" text-anchor="middle" font-size="12" font-weight="bold" fill="#58a6ff">LSM303DLHC</text>
+  <text x="857" y="173" text-anchor="middle" font-size="9" fill="#8b949e">Accel 0x19 · Mag 0x1E</text>
+
+  <!-- Left pin stubs -->
+  <line x1="730" y1="175" x2="750" y2="175" stroke="#f85149" stroke-width="2"/>
+  <circle cx="730" cy="175" r="3" fill="#f85149"/>
+  <text x="752" y="179" font-size="9" fill="#f85149">VCC</text>
+
+  <line x1="730" y1="205" x2="750" y2="205" stroke="#484f58" stroke-width="2"/>
+  <circle cx="730" cy="205" r="3" fill="#484f58"/>
+  <text x="752" y="209" font-size="9" fill="#8b949e">GND</text>
+
+  <line x1="730" y1="235" x2="750" y2="235" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="730" cy="235" r="3" fill="#58a6ff"/>
+  <text x="752" y="239" font-size="9" fill="#58a6ff">SDA</text>
+
+  <line x1="730" y1="265" x2="750" y2="265" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="730" cy="265" r="3" fill="#bc8cff"/>
+  <text x="752" y="269" font-size="9" fill="#bc8cff">SCL</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- LCD 16x2 + PCF8574T  (x:750-965, y:435-585)             -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="750" y="435" width="215" height="150" rx="8" fill="#0f1a2a" stroke="#f0883e" stroke-width="1.5"/>
+  <rect x="750" y="435" width="215" height="30" rx="8" fill="#2a1a08"/>
+  <text x="857" y="455" text-anchor="middle" font-size="12" font-weight="bold" fill="#f0883e">LCD 16×2</text>
+  <text x="857" y="468" text-anchor="middle" font-size="9" fill="#8b949e">PCF8574T I2C Backpack · 0x27</text>
+
+  <!-- Left pin stubs -->
+  <line x1="730" y1="470" x2="750" y2="470" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="730" cy="470" r="3" fill="#f0883e"/>
+  <text x="752" y="474" font-size="9" fill="#f0883e">VCC (5V)</text>
+
+  <line x1="730" y1="498" x2="750" y2="498" stroke="#484f58" stroke-width="2"/>
+  <circle cx="730" cy="498" r="3" fill="#484f58"/>
+  <text x="752" y="502" font-size="9" fill="#8b949e">GND</text>
+
+  <line x1="730" y1="526" x2="750" y2="526" stroke="#58a6ff" stroke-width="2"/>
+  <circle cx="730" cy="526" r="3" fill="#58a6ff"/>
+  <text x="752" y="530" font-size="9" fill="#58a6ff">SDA</text>
+
+  <line x1="730" y1="554" x2="750" y2="554" stroke="#bc8cff" stroke-width="2"/>
+  <circle cx="730" cy="554" r="3" fill="#bc8cff"/>
+  <text x="752" y="558" font-size="9" fill="#bc8cff">SCL</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- TACTILE BUTTON  (x:60-225, y:410-505)                    -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="60" y="410" width="165" height="95" rx="8" fill="#1f1a08" stroke="#e3b341" stroke-width="2"/>
+  <rect x="60" y="410" width="165" height="30" rx="8" fill="#332d10"/>
+  <text x="142" y="430" text-anchor="middle" font-size="12" font-weight="bold" fill="#e3b341">BUTTON</text>
+  <text x="142" y="443" text-anchor="middle" font-size="9" fill="#8b949e">D2 · INPUT_PULLUP</text>
+
+  <!-- Right pin stubs -->
+  <line x1="225" y1="450" x2="245" y2="450" stroke="#e3b341" stroke-width="2"/>
+  <circle cx="245" cy="450" r="3" fill="#e3b341"/>
+  <text x="152" y="454" font-size="9" fill="#e3b341">PIN1→D2</text>
+
+  <line x1="225" y1="478" x2="245" y2="478" stroke="#484f58" stroke-width="2"/>
+  <circle cx="245" cy="478" r="3" fill="#484f58"/>
+  <text x="152" y="482" font-size="9" fill="#8b949e">PIN2→GND</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- POWER WIRES                                               -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- Arduino 5V → 5V rail (x=320) -->
+  <polyline points="375,245 320,245 320,98" fill="none" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="320" cy="98" r="4" fill="#f0883e"/>
+
+  <!-- Arduino 3.3V → 3.3V rail (x=333) -->
+  <polyline points="375,268 333,268 333,78" fill="none" stroke="#f85149" stroke-width="2"/>
+  <circle cx="333" cy="78" r="4" fill="#f85149"/>
+
+  <!-- MAX4466 VCC → 3.3V rail (x=245, straight up) -->
+  <polyline points="245,190 245,78" fill="none" stroke="#f85149" stroke-width="2"/>
+  <circle cx="245" cy="78" r="4" fill="#f85149"/>
+
+  <!-- LSM303 VCC → 3.3V rail (left corridor x=670, above I2C bus) -->
+  <polyline points="730,175 670,175 670,78" fill="none" stroke="#f85149" stroke-width="2"/>
+  <circle cx="670" cy="78" r="4" fill="#f85149"/>
+
+  <!-- LCD VCC → 5V rail (go right to x=955, then up) -->
+  <polyline points="730,470 955,470 955,98" fill="none" stroke="#f0883e" stroke-width="2"/>
+  <circle cx="955" cy="98" r="4" fill="#f0883e"/>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- GND WIRES                                                 -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- Arduino GND → rail (x=346) -->
+  <polyline points="375,300 346,300 346,665" fill="none" stroke="#484f58" stroke-width="2"/>
+  <circle cx="346" cy="665" r="4" fill="#484f58"/>
+
+  <!-- MAX4466 GND + Button GND → shared trunk at x=253 -->
+  <polyline points="245,218 253,218 253,665" fill="none" stroke="#484f58" stroke-width="2"/>
+  <circle cx="253" cy="665" r="4" fill="#484f58"/>
+  <!-- Button PIN2 GND taps into trunk -->
+  <polyline points="245,478 253,478" fill="none" stroke="#484f58" stroke-width="2"/>
+  <circle cx="253" cy="478" r="5" fill="#484f58"/>
+
+  <!-- LSM303 GND → rail (left corridor x=660, then down) -->
+  <polyline points="730,205 660,205 660,665" fill="none" stroke="#484f58" stroke-width="2"/>
+  <circle cx="660" cy="665" r="4" fill="#484f58"/>
+
+  <!-- LCD GND → rail (route around bottom of LCD box to avoid parallel runs) -->
+  <polyline points="730,498 718,498 718,600 935,600 935,665" fill="none" stroke="#484f58" stroke-width="2"/>
+  <circle cx="935" cy="665" r="4" fill="#484f58"/>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- ANALOG SIGNAL: MAX4466 OUT → Arduino A2 (green)          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <polyline points="245,246 310,246 310,375 375,375" fill="none" stroke="#3fb950" stroke-width="2.5"/>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- DIGITAL SIGNAL: Button PIN1 → Arduino D2 (yellow)        -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <polyline points="245,450 362,450 362,445 375,445" fill="none" stroke="#e3b341" stroke-width="2.5"/>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- I2C BUS                                                   -->
+  <!-- SDA trunk: x=683, y=235 to y=526  (blue)                 -->
+  <!-- SCL trunk: x=690, y=265 to y=554  (purple)               -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+
+  <!-- SDA trunk line -->
+  <line x1="683" y1="235" x2="683" y2="526" stroke="#58a6ff" stroke-width="2.5"/>
+
+  <!-- Arduino D20/SDA → SDA trunk -->
+  <polyline points="665,268 683,268" fill="none" stroke="#58a6ff" stroke-width="2.5"/>
+  <circle cx="683" cy="268" r="5" fill="#58a6ff"/>
+
+  <!-- LSM303 SDA → SDA trunk (top) -->
+  <polyline points="730,235 683,235" fill="none" stroke="#58a6ff" stroke-width="2.5"/>
+
+  <!-- LCD SDA → SDA trunk (bottom) -->
+  <polyline points="730,526 683,526" fill="none" stroke="#58a6ff" stroke-width="2.5"/>
+
+  <!-- SDA label -->
+  <text x="686" y="410" font-size="9" fill="#58a6ff" transform="rotate(-90,686,410)">SDA</text>
+
+  <!-- SCL trunk line -->
+  <line x1="690" y1="265" x2="690" y2="554" stroke="#bc8cff" stroke-width="2.5"/>
+
+  <!-- Arduino D21/SCL → SCL trunk -->
+  <polyline points="665,300 690,300" fill="none" stroke="#bc8cff" stroke-width="2.5"/>
+  <circle cx="690" cy="300" r="5" fill="#bc8cff"/>
+
+  <!-- LSM303 SCL → SCL trunk (top) -->
+  <polyline points="730,265 690,265" fill="none" stroke="#bc8cff" stroke-width="2.5"/>
+
+  <!-- LCD SCL → SCL trunk (bottom) -->
+  <polyline points="730,554 690,554" fill="none" stroke="#bc8cff" stroke-width="2.5"/>
+
+  <!-- SCL label -->
+  <text x="693" y="440" font-size="9" fill="#bc8cff" transform="rotate(-90,693,440)">SCL</text>
+
+  <!-- I2C bus label -->
+  <rect x="695" y="293" width="48" height="20" rx="3" fill="#1a1f35" stroke="#30363d" stroke-width="1"/>
+  <text x="719" y="307" text-anchor="middle" font-size="9" fill="#6e7681">I2C bus</text>
+
+  <!-- Pull-up note -->
+  <rect x="695" y="320" width="48" height="30" rx="3" fill="#1a1f35" stroke="#30363d" stroke-width="1"/>
+  <text x="719" y="332" text-anchor="middle" font-size="8" fill="#6e7681">4.7kΩ</text>
+  <text x="719" y="344" text-anchor="middle" font-size="8" fill="#6e7681">pull-ups</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- LEGEND (2 rows)                                           -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="60" y="682" width="620" height="50" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+
+  <line x1="75" y1="698" x2="105" y2="698" stroke="#f85149" stroke-width="2.5"/>
+  <text x="110" y="702" font-size="10" fill="#c9d1d9">3.3V Power</text>
+
+  <line x1="75" y1="718" x2="105" y2="718" stroke="#f0883e" stroke-width="2.5"/>
+  <text x="110" y="722" font-size="10" fill="#c9d1d9">5V Power (LCD)</text>
+
+  <line x1="225" y1="698" x2="255" y2="698" stroke="#484f58" stroke-width="2.5"/>
+  <text x="260" y="702" font-size="10" fill="#c9d1d9">Ground</text>
+
+  <line x1="225" y1="718" x2="255" y2="718" stroke="#3fb950" stroke-width="2.5"/>
+  <text x="260" y="722" font-size="10" fill="#c9d1d9">Analog (A2)</text>
+
+  <line x1="365" y1="698" x2="395" y2="698" stroke="#e3b341" stroke-width="2.5"/>
+  <text x="400" y="702" font-size="10" fill="#c9d1d9">Digital (D2)</text>
+
+  <line x1="365" y1="718" x2="381" y2="718" stroke="#58a6ff" stroke-width="2.5"/>
+  <line x1="384" y1="718" x2="400" y2="718" stroke="#bc8cff" stroke-width="2.5"/>
+  <text x="405" y="722" font-size="10" fill="#c9d1d9">I2C SDA / SCL</text>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- I2C ADDRESS TABLE                                         -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <rect x="700" y="682" width="300" height="50" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  <text x="715" y="698" font-size="9" fill="#58a6ff">0x19</text>
+  <text x="740" y="698" font-size="9" fill="#8b949e">Accel</text>
+  <text x="792" y="698" font-size="9" fill="#58a6ff">0x1E</text>
+  <text x="817" y="698" font-size="9" fill="#8b949e">Mag</text>
+  <text x="862" y="698" font-size="9" fill="#58a6ff">0x27</text>
+  <text x="887" y="698" font-size="9" fill="#8b949e">LCD</text>
+  <text x="715" y="716" font-size="9" fill="#6e7681">SDA=D20 · SCL=D21 · Mic=A2 · Btn=D2</text>
+  <text x="715" y="728" font-size="9" fill="#6e7681">LCD 5V from VBUS · all others 3.3V</text>
+
+</svg>
